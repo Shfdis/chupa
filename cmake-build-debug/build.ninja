@@ -55,6 +55,18 @@ build CMakeFiles/chupa.dir/main.cpp.o: CXX_COMPILER__chupa_Debug /home/artem/chu
   OBJECT_DIR = CMakeFiles/chupa.dir
   OBJECT_FILE_DIR = CMakeFiles/chupa.dir
 
+build CMakeFiles/chupa.dir/player.cpp.o: CXX_COMPILER__chupa_Debug /home/artem/chupa/player.cpp || cmake_object_order_depends_target_chupa
+  DEP_FILE = CMakeFiles/chupa.dir/player.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  OBJECT_DIR = CMakeFiles/chupa.dir
+  OBJECT_FILE_DIR = CMakeFiles/chupa.dir
+
+build CMakeFiles/chupa.dir/environment_obj.cpp.o: CXX_COMPILER__chupa_Debug /home/artem/chupa/environment_obj.cpp || cmake_object_order_depends_target_chupa
+  DEP_FILE = CMakeFiles/chupa.dir/environment_obj.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  OBJECT_DIR = CMakeFiles/chupa.dir
+  OBJECT_FILE_DIR = CMakeFiles/chupa.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target chupa
@@ -63,7 +75,7 @@ build CMakeFiles/chupa.dir/main.cpp.o: CXX_COMPILER__chupa_Debug /home/artem/chu
 #############################################
 # Link the executable chupa
 
-build chupa: CXX_EXECUTABLE_LINKER__chupa_Debug CMakeFiles/chupa.dir/main.cpp.o
+build chupa: CXX_EXECUTABLE_LINKER__chupa_Debug CMakeFiles/chupa.dir/main.cpp.o CMakeFiles/chupa.dir/player.cpp.o CMakeFiles/chupa.dir/environment_obj.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/chupa.dir
   POST_BUILD = :
