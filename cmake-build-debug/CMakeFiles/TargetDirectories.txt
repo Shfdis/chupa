@@ -1,3 +1,0 @@
-/home/artem/chupa/cmake-build-debug/CMakeFiles/chupa.dir
-/home/artem/chupa/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/artem/chupa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
