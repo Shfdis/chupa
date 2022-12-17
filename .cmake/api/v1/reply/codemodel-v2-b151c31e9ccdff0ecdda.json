@@ -6,8 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-8d57938e798cc8819bc0.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.24"
@@ -40,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "chupa::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-chupa-Debug-365a3bba709e8202b4ee.json",
+					"jsonFile" : "target-chupa-Debug-c6e2383014fd1c6f10a6.json",
 					"name" : "chupa",
 					"projectIndex" : 0
 				}
@@ -50,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/artem/chupa",
-		"source" : "/home/artem/chupa"
+		"build" : "/home/oleg/chupa/chupa",
+		"source" : "/home/oleg/chupa/chupa"
 	},
 	"version" : 
 	{
