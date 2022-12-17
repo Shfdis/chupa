@@ -57,10 +57,10 @@ RM = /var/lib/snapd/snap/clion/218/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oleg/chupa/chupa
+CMAKE_SOURCE_DIR = /home/artem/chupa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oleg/chupa/chupa
+CMAKE_BINARY_DIR = /home/artem/chupa
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oleg/chupa/chupa/CMakeFiles /home/oleg/chupa/chupa//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artem/chupa/CMakeFiles /home/artem/chupa//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oleg/chupa/chupa/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artem/chupa/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,6 +153,30 @@ gameclasses/environment_obj.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chupa.dir/build.make CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.s
 .PHONY : gameclasses/environment_obj.cpp.s
 
+gameclasses/game.o: gameclasses/game.cpp.o
+.PHONY : gameclasses/game.o
+
+# target to build an object file
+gameclasses/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chupa.dir/build.make CMakeFiles/chupa.dir/gameclasses/game.cpp.o
+.PHONY : gameclasses/game.cpp.o
+
+gameclasses/game.i: gameclasses/game.cpp.i
+.PHONY : gameclasses/game.i
+
+# target to preprocess a source file
+gameclasses/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chupa.dir/build.make CMakeFiles/chupa.dir/gameclasses/game.cpp.i
+.PHONY : gameclasses/game.cpp.i
+
+gameclasses/game.s: gameclasses/game.cpp.s
+.PHONY : gameclasses/game.s
+
+# target to generate assembly for a file
+gameclasses/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chupa.dir/build.make CMakeFiles/chupa.dir/gameclasses/game.cpp.s
+.PHONY : gameclasses/game.cpp.s
+
 gameclasses/player.o: gameclasses/player.cpp.o
 .PHONY : gameclasses/player.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... gameclasses/environment_obj.o"
 	@echo "... gameclasses/environment_obj.i"
 	@echo "... gameclasses/environment_obj.s"
+	@echo "... gameclasses/game.o"
+	@echo "... gameclasses/game.i"
+	@echo "... gameclasses/game.s"
 	@echo "... gameclasses/player.o"
 	@echo "... gameclasses/player.i"
 	@echo "... gameclasses/player.s"

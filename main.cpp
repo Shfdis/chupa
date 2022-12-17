@@ -1,5 +1,7 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
+#include <SFML/Graphics.hpp>
+#include "gameclasses/player.h"
+#include "gameclasses/game.h"
+int main()
+{
 
 }

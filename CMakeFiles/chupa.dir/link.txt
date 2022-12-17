@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/chupa.dir/main.cpp.o CMakeFiles/chupa.dir/gameclasses/player.cpp.o CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o -o chupa  /usr/lib/libsfml-graphics.so.2.5.1 /usr/lib/libsfml-window.so.2.5.1 /usr/lib/libsfml-system.so.2.5.1 
+/usr/bin/c++ -g CMakeFiles/chupa.dir/main.cpp.o CMakeFiles/chupa.dir/gameclasses/player.cpp.o CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o CMakeFiles/chupa.dir/gameclasses/game.cpp.o -o chupa  /usr/lib/libsfml-graphics.so.2.5.1 /usr/lib/libsfml-window.so.2.5.1 /usr/lib/libsfml-system.so.2.5.1 

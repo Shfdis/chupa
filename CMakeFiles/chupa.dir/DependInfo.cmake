@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/oleg/chupa/chupa/gameclasses/environment_obj.cpp" "CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o" "gcc" "CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o.d"
-  "/home/oleg/chupa/chupa/gameclasses/player.cpp" "CMakeFiles/chupa.dir/gameclasses/player.cpp.o" "gcc" "CMakeFiles/chupa.dir/gameclasses/player.cpp.o.d"
-  "/home/oleg/chupa/chupa/main.cpp" "CMakeFiles/chupa.dir/main.cpp.o" "gcc" "CMakeFiles/chupa.dir/main.cpp.o.d"
+  "/home/artem/chupa/gameclasses/environment_obj.cpp" "CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o" "gcc" "CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o.d"
+  "/home/artem/chupa/gameclasses/game.cpp" "CMakeFiles/chupa.dir/gameclasses/game.cpp.o" "gcc" "CMakeFiles/chupa.dir/gameclasses/game.cpp.o.d"
+  "/home/artem/chupa/gameclasses/player.cpp" "CMakeFiles/chupa.dir/gameclasses/player.cpp.o" "gcc" "CMakeFiles/chupa.dir/gameclasses/player.cpp.o.d"
+  "/home/artem/chupa/main.cpp" "CMakeFiles/chupa.dir/main.cpp.o" "gcc" "CMakeFiles/chupa.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

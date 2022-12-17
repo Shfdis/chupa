@@ -53,10 +53,10 @@ RM = /var/lib/snapd/snap/clion/218/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oleg/chupa/chupa
+CMAKE_SOURCE_DIR = /home/artem/chupa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oleg/chupa/chupa
+CMAKE_BINARY_DIR = /home/artem/chupa
 
 # Include any dependencies generated for this target.
 include CMakeFiles/chupa.dir/depend.make
@@ -72,50 +72,65 @@ include CMakeFiles/chupa.dir/flags.make
 CMakeFiles/chupa.dir/main.cpp.o: CMakeFiles/chupa.dir/flags.make
 CMakeFiles/chupa.dir/main.cpp.o: main.cpp
 CMakeFiles/chupa.dir/main.cpp.o: CMakeFiles/chupa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oleg/chupa/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/chupa.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chupa.dir/main.cpp.o -MF CMakeFiles/chupa.dir/main.cpp.o.d -o CMakeFiles/chupa.dir/main.cpp.o -c /home/oleg/chupa/chupa/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/chupa.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chupa.dir/main.cpp.o -MF CMakeFiles/chupa.dir/main.cpp.o.d -o CMakeFiles/chupa.dir/main.cpp.o -c /home/artem/chupa/main.cpp
 
 CMakeFiles/chupa.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chupa.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oleg/chupa/chupa/main.cpp > CMakeFiles/chupa.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/chupa/main.cpp > CMakeFiles/chupa.dir/main.cpp.i
 
 CMakeFiles/chupa.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chupa.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oleg/chupa/chupa/main.cpp -o CMakeFiles/chupa.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/chupa/main.cpp -o CMakeFiles/chupa.dir/main.cpp.s
 
 CMakeFiles/chupa.dir/gameclasses/player.cpp.o: CMakeFiles/chupa.dir/flags.make
 CMakeFiles/chupa.dir/gameclasses/player.cpp.o: gameclasses/player.cpp
 CMakeFiles/chupa.dir/gameclasses/player.cpp.o: CMakeFiles/chupa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oleg/chupa/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chupa.dir/gameclasses/player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chupa.dir/gameclasses/player.cpp.o -MF CMakeFiles/chupa.dir/gameclasses/player.cpp.o.d -o CMakeFiles/chupa.dir/gameclasses/player.cpp.o -c /home/oleg/chupa/chupa/gameclasses/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chupa.dir/gameclasses/player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chupa.dir/gameclasses/player.cpp.o -MF CMakeFiles/chupa.dir/gameclasses/player.cpp.o.d -o CMakeFiles/chupa.dir/gameclasses/player.cpp.o -c /home/artem/chupa/gameclasses/player.cpp
 
 CMakeFiles/chupa.dir/gameclasses/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chupa.dir/gameclasses/player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oleg/chupa/chupa/gameclasses/player.cpp > CMakeFiles/chupa.dir/gameclasses/player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/chupa/gameclasses/player.cpp > CMakeFiles/chupa.dir/gameclasses/player.cpp.i
 
 CMakeFiles/chupa.dir/gameclasses/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chupa.dir/gameclasses/player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oleg/chupa/chupa/gameclasses/player.cpp -o CMakeFiles/chupa.dir/gameclasses/player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/chupa/gameclasses/player.cpp -o CMakeFiles/chupa.dir/gameclasses/player.cpp.s
 
 CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o: CMakeFiles/chupa.dir/flags.make
 CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o: gameclasses/environment_obj.cpp
 CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o: CMakeFiles/chupa.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oleg/chupa/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o -MF CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o.d -o CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o -c /home/oleg/chupa/chupa/gameclasses/environment_obj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o -MF CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o.d -o CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o -c /home/artem/chupa/gameclasses/environment_obj.cpp
 
 CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oleg/chupa/chupa/gameclasses/environment_obj.cpp > CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/chupa/gameclasses/environment_obj.cpp > CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.i
 
 CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oleg/chupa/chupa/gameclasses/environment_obj.cpp -o CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/chupa/gameclasses/environment_obj.cpp -o CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.s
+
+CMakeFiles/chupa.dir/gameclasses/game.cpp.o: CMakeFiles/chupa.dir/flags.make
+CMakeFiles/chupa.dir/gameclasses/game.cpp.o: gameclasses/game.cpp
+CMakeFiles/chupa.dir/gameclasses/game.cpp.o: CMakeFiles/chupa.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/artem/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/chupa.dir/gameclasses/game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chupa.dir/gameclasses/game.cpp.o -MF CMakeFiles/chupa.dir/gameclasses/game.cpp.o.d -o CMakeFiles/chupa.dir/gameclasses/game.cpp.o -c /home/artem/chupa/gameclasses/game.cpp
+
+CMakeFiles/chupa.dir/gameclasses/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chupa.dir/gameclasses/game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artem/chupa/gameclasses/game.cpp > CMakeFiles/chupa.dir/gameclasses/game.cpp.i
+
+CMakeFiles/chupa.dir/gameclasses/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chupa.dir/gameclasses/game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artem/chupa/gameclasses/game.cpp -o CMakeFiles/chupa.dir/gameclasses/game.cpp.s
 
 # Object files for target chupa
 chupa_OBJECTS = \
 "CMakeFiles/chupa.dir/main.cpp.o" \
 "CMakeFiles/chupa.dir/gameclasses/player.cpp.o" \
-"CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o"
+"CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o" \
+"CMakeFiles/chupa.dir/gameclasses/game.cpp.o"
 
 # External object files for target chupa
 chupa_EXTERNAL_OBJECTS =
@@ -123,12 +138,13 @@ chupa_EXTERNAL_OBJECTS =
 chupa: CMakeFiles/chupa.dir/main.cpp.o
 chupa: CMakeFiles/chupa.dir/gameclasses/player.cpp.o
 chupa: CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o
+chupa: CMakeFiles/chupa.dir/gameclasses/game.cpp.o
 chupa: CMakeFiles/chupa.dir/build.make
 chupa: /usr/lib/libsfml-graphics.so.2.5.1
 chupa: /usr/lib/libsfml-window.so.2.5.1
 chupa: /usr/lib/libsfml-system.so.2.5.1
 chupa: CMakeFiles/chupa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oleg/chupa/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable chupa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/artem/chupa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable chupa"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chupa.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +156,6 @@ CMakeFiles/chupa.dir/clean:
 .PHONY : CMakeFiles/chupa.dir/clean
 
 CMakeFiles/chupa.dir/depend:
-	cd /home/oleg/chupa/chupa && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oleg/chupa/chupa /home/oleg/chupa/chupa /home/oleg/chupa/chupa /home/oleg/chupa/chupa /home/oleg/chupa/chupa/CMakeFiles/chupa.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/artem/chupa && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artem/chupa /home/artem/chupa /home/artem/chupa /home/artem/chupa /home/artem/chupa/CMakeFiles/chupa.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/chupa.dir/depend
 

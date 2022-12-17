@@ -54,10 +54,10 @@ RM = /var/lib/snapd/snap/clion/218/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oleg/chupa/chupa
+CMAKE_SOURCE_DIR = /home/artem/chupa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oleg/chupa/chupa
+CMAKE_BINARY_DIR = /home/artem/chupa
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/chupa.dir/clean
 CMakeFiles/chupa.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chupa.dir/build.make CMakeFiles/chupa.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chupa.dir/build.make CMakeFiles/chupa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oleg/chupa/chupa/CMakeFiles --progress-num=1,2,3,4 "Built target chupa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/artem/chupa/CMakeFiles --progress-num=1,2,3,4,5 "Built target chupa"
 .PHONY : CMakeFiles/chupa.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/chupa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oleg/chupa/chupa/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artem/chupa/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/chupa.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oleg/chupa/chupa/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artem/chupa/CMakeFiles 0
 .PHONY : CMakeFiles/chupa.dir/rule
 
 # Convenience name for target.

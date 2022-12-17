@@ -5,99 +5,121 @@
 		<Option title="chupa"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\usr\lib\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib64\;CMake Files\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\usr\lib64\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/oleg/chupa/chupa"/>
+				<Option working_dir="/home/artem/chupa"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="chupa">
-				<Option output="/home/oleg/chupa/chupa/chupa" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/oleg/chupa/chupa"/>
+				<Option output="/home/artem/chupa/chupa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/artem/chupa"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
-				<Compiler/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 chupa"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 chupa"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="chupa/fast">
-				<Option output="/home/oleg/chupa/chupa/chupa" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/oleg/chupa/chupa"/>
+				<Option output="/home/artem/chupa/chupa" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/artem/chupa"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
-				<Compiler/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 chupa/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 chupa/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/oleg/chupa/chupa"/>
+				<Option working_dir="/home/artem/chupa"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/oleg/chupa/chupa"/>
+				<Option working_dir="/home/artem/chupa"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/oleg/chupa/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/artem/chupa/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/oleg/chupa/chupa/gameclasses/environment_obj.cpp">
+		<Unit filename="/home/artem/chupa/gameclasses/environment_obj.cpp">
 			<Option target="chupa"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/gameclasses/environment_obj.h">
+		<Unit filename="/home/artem/chupa/gameclasses/environment_obj.h">
 			<Option target="chupa"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/gameclasses/player.cpp">
+		<Unit filename="/home/artem/chupa/gameclasses/game.cpp">
 			<Option target="chupa"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/gameclasses/player.h">
+		<Unit filename="/home/artem/chupa/gameclasses/game.h">
 			<Option target="chupa"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/main.cpp">
+		<Unit filename="/home/artem/chupa/gameclasses/player.cpp">
 			<Option target="chupa"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/CMakeLists.txt">
+		<Unit filename="/home/artem/chupa/gameclasses/player.h">
+			<Option target="chupa"/>
+		</Unit>
+		<Unit filename="/home/artem/chupa/main.cpp">
+			<Option target="chupa"/>
+		</Unit>
+		<Unit filename="/home/artem/chupa/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/../../../../usr/lib/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\SFML\"/>
+		<Unit filename="/home/artem/chupa/../../../usr/lib64/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/../../../../usr/lib/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\SFML\"/>
+		<Unit filename="/home/artem/chupa/../../../usr/lib64/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/../../../../usr/lib/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\SFML\"/>
+		<Unit filename="/home/artem/chupa/../../../usr/lib64/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/../../../../usr/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\SFML\"/>
+		<Unit filename="/home/artem/chupa/../../../usr/lib64/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/oleg/chupa/chupa/../../../../usr/lib/cmake/SFML/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\SFML\"/>
+		<Unit filename="/home/artem/chupa/../../../usr/lib64/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib64\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
