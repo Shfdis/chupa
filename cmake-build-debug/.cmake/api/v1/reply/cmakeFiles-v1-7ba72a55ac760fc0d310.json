@@ -5,7 +5,8 @@
 			"path" : "CMakeLists.txt"
 		},
 		{
-			"path" : "CMakeFiles/3.24.2/CMakeSystem.cmake"
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -13,10 +14,12 @@
 			"path" : "/var/lib/snapd/snap/clion/218/bin/cmake/linux/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
-			"path" : "CMakeFiles/3.24.2/CMakeCCompiler.cmake"
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeCCompiler.cmake"
 		},
 		{
-			"path" : "CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -117,6 +120,7 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/var/lib/snapd/snap/clion/218/bin/cmake/linux/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-89c5558c75addddf28d3.json
 		},
 		{
 			"isExternal" : true,
@@ -137,12 +141,18 @@
 		{
 			"isExternal" : true,
 			"path" : "/usr/lib64/cmake/SFML/SFMLConfigDependencies.cmake"
+========
+>>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7ba72a55ac760fc0d310.json
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-89c5558c75addddf28d3.json
 		"build" : "/home/artem/chupa",
+========
+		"build" : "/home/artem/chupa/cmake-build-debug",
+>>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7ba72a55ac760fc0d310.json
 		"source" : "/home/artem/chupa"
 	},
 	"version" : 

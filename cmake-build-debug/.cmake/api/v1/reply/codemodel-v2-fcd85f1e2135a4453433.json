@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8d57938e798cc8819bc0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "chupa",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "chupa::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e3146f06f89baba2e31b.json
+					"jsonFile" : "target-chupa-Debug-365a3bba709e8202b4ee.json",
+========
+					"jsonFile" : "target-chupa-Debug-f32f10155d06d6c8a894.json",
+>>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fcd85f1e2135a4453433.json
+					"name" : "chupa",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e3146f06f89baba2e31b.json
+		"build" : "/home/artem/chupa",
+========
+		"build" : "/home/artem/chupa/cmake-build-debug",
+>>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-fcd85f1e2135a4453433.json
+		"source" : "/home/artem/chupa"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -42,7 +42,11 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
+<<<<<<< HEAD:CMakeFiles/rules.ninja
   command = /var/lib/snapd/snap/clion/218/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/artem/chupa -B/home/artem/chupa
+=======
+  command = /var/lib/snapd/snap/clion/218/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/artem/chupa -B/home/artem/chupa/cmake-build-debug
+>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/CMakeFiles/rules.ninja
   description = Re-running CMake...
   generator = 1
 
