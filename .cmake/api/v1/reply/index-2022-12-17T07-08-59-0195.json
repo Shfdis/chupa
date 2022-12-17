@@ -26,11 +26,7 @@
 	"objects" : 
 	[
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2022-12-17T07-08-59-0195.json
 			"jsonFile" : "codemodel-v2-e3146f06f89baba2e31b.json",
-========
-			"jsonFile" : "codemodel-v2-fcd85f1e2135a4453433.json",
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/index-2022-12-13T15-15-30-0680.json
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -39,11 +35,7 @@
 			}
 		},
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2022-12-17T07-08-59-0195.json
 			"jsonFile" : "cache-v2-1a4108c620b7c7f8bdee.json",
-========
-			"jsonFile" : "cache-v2-451b57e9fef7837a8d1d.json",
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/index-2022-12-13T15-15-30-0680.json
 			"kind" : "cache",
 			"version" : 
 			{
@@ -52,11 +44,7 @@
 			}
 		},
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2022-12-17T07-08-59-0195.json
 			"jsonFile" : "cmakeFiles-v1-89c5558c75addddf28d3.json",
-========
-			"jsonFile" : "cmakeFiles-v1-7ba72a55ac760fc0d310.json",
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/index-2022-12-13T15-15-30-0680.json
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -78,11 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2022-12-17T07-08-59-0195.json
 			"jsonFile" : "cache-v2-1a4108c620b7c7f8bdee.json",
-========
-			"jsonFile" : "cache-v2-451b57e9fef7837a8d1d.json",
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/index-2022-12-13T15-15-30-0680.json
 			"kind" : "cache",
 			"version" : 
 			{
@@ -92,11 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2022-12-17T07-08-59-0195.json
 			"jsonFile" : "cmakeFiles-v1-89c5558c75addddf28d3.json",
-========
-			"jsonFile" : "cmakeFiles-v1-7ba72a55ac760fc0d310.json",
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/index-2022-12-13T15-15-30-0680.json
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -106,11 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2022-12-17T07-08-59-0195.json
 			"jsonFile" : "codemodel-v2-e3146f06f89baba2e31b.json",
-========
-			"jsonFile" : "codemodel-v2-fcd85f1e2135a4453433.json",
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/index-2022-12-13T15-15-30-0680.json
 			"kind" : "codemodel",
 			"version" : 
 			{

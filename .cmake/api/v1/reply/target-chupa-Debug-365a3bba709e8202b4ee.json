@@ -10,13 +10,9 @@
 	{
 		"commands" : 
 		[
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-chupa-Debug-365a3bba709e8202b4ee.json
 			"add_executable",
 			"install",
 			"target_link_libraries"
-========
-			"add_executable"
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/target-chupa-Debug-f32f10155d06d6c8a894.json
 		],
 		"files" : 
 		[
@@ -30,7 +26,6 @@
 			{
 				"command" : 0,
 				"file" : 0,
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-chupa-Debug-365a3bba709e8202b4ee.json
 				"line" : 9,
 				"parent" : 0
 			},
@@ -44,9 +39,6 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 11,
-========
-				"line" : 6,
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/target-chupa-Debug-f32f10155d06d6c8a894.json
 				"parent" : 0
 			}
 		]
@@ -106,7 +98,6 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/target-chupa-Debug-365a3bba709e8202b4ee.json
 			},
 			{
 				"backtrace" : 3,
@@ -132,8 +123,6 @@
 				"backtrace" : 3,
 				"fragment" : "/usr/lib/libsfml-system.so.2.5.1",
 				"role" : "libraries"
-========
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/target-chupa-Debug-f32f10155d06d6c8a894.json
 			}
 		],
 		"language" : "CXX"
@@ -176,23 +165,23 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "player.cpp",
+			"path" : "gameclasses/player.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "player.h",
+			"path" : "gameclasses/player.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "environment_obj.cpp",
+			"path" : "gameclasses/environment_obj.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "environment_obj.h",
+			"path" : "gameclasses/environment_obj.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -55,11 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-1a4108c620b7c7f8bdee.json
 			"value" : "/home/artem/chupa"
-========
-			"value" : "/home/artem/chupa/cmake-build-debug"
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/cache-v2-451b57e9fef7837a8d1d.json
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -158,7 +154,7 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/c++"
 		},
 		{
@@ -286,7 +282,7 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/cc"
 		},
 		{
@@ -418,7 +414,6 @@
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
 		},
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-1a4108c620b7c7f8bdee.json
 			"name" : "CMAKE_EDIT_COMMAND",
 			"properties" : 
 			[
@@ -431,8 +426,6 @@
 			"value" : "/var/lib/snapd/snap/cmake/1210/bin/ccmake"
 		},
 		{
-========
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/cache-v2-451b57e9fef7837a8d1d.json
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
 			"properties" : 
 			[
@@ -562,11 +555,7 @@
 				}
 			],
 			"type" : "STATIC",
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-1a4108c620b7c7f8bdee.json
 			"value" : "/home/artem/chupa/CMakeFiles/pkgRedirects"
-========
-			"value" : "/home/artem/chupa/cmake-build-debug/CMakeFiles/pkgRedirects"
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/cache-v2-451b57e9fef7837a8d1d.json
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -1149,7 +1138,6 @@
 			"value" : "FALSE"
 		},
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-1a4108c620b7c7f8bdee.json
 			"name" : "SFML_DIR",
 			"properties" : 
 			[
@@ -1174,8 +1162,6 @@
 			"value" : "SFML_DOC_DIR-NOTFOUND"
 		},
 		{
-========
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/cache-v2-451b57e9fef7837a8d1d.json
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
 			"properties" : 
 			[
@@ -1197,11 +1183,7 @@
 				}
 			],
 			"type" : "STATIC",
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/cache-v2-1a4108c620b7c7f8bdee.json
 			"value" : "/home/artem/chupa"
-========
-			"value" : "/home/artem/chupa/cmake-build-debug"
->>>>>>>> parent of 527ab20 (Cmake config):cmake-build-debug/.cmake/api/v1/reply/cache-v2-451b57e9fef7837a8d1d.json
 		},
 		{
 			"name" : "chupa_IS_TOP_LEVEL",
