@@ -1,7 +1,10 @@
 #include <SFML/Graphics.hpp>
 #include "gameclasses/player.h"
 #include "gameclasses/game.h"
-int main()
-{
+
+using namespace sf;
+
+int main() {
+    Game g;
 
 }
