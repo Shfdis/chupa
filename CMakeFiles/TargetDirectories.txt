@@ -1,3 +1,7 @@
-/home/oleg/chupa/chupa/CMakeFiles/chupa.dir
-/home/oleg/chupa/chupa/CMakeFiles/edit_cache.dir
-/home/oleg/chupa/chupa/CMakeFiles/rebuild_cache.dir
+/home/artem/chupa/CMakeFiles/chupa.dir
+/home/artem/chupa/CMakeFiles/edit_cache.dir
+/home/artem/chupa/CMakeFiles/rebuild_cache.dir
+/home/artem/chupa/CMakeFiles/list_install_components.dir
+/home/artem/chupa/CMakeFiles/install.dir
+/home/artem/chupa/CMakeFiles/install/local.dir
+/home/artem/chupa/CMakeFiles/install/strip.dir

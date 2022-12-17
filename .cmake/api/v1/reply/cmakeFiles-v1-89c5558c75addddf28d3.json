@@ -120,30 +120,30 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/lib/cmake/SFML/SFMLConfigVersion.cmake"
+			"path" : "/usr/lib64/cmake/SFML/SFMLConfigVersion.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/lib/cmake/SFML/SFMLConfig.cmake"
+			"path" : "/usr/lib64/cmake/SFML/SFMLConfig.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/lib/cmake/SFML/SFMLSharedTargets.cmake"
+			"path" : "/usr/lib64/cmake/SFML/SFMLSharedTargets.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+			"path" : "/usr/lib64/cmake/SFML/SFMLSharedTargets-release.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+			"path" : "/usr/lib64/cmake/SFML/SFMLConfigDependencies.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/oleg/chupa/chupa",
-		"source" : "/home/oleg/chupa/chupa"
+		"build" : "/home/artem/chupa",
+		"source" : "/home/artem/chupa"
 	},
 	"version" : 
 	{

@@ -11,16 +11,12 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries",
-			"set_target_properties",
-			"include",
-			"find_package"
+			"install",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt",
-			"/usr/lib/cmake/SFML/SFMLSharedTargets.cmake",
-			"/usr/lib/cmake/SFML/SFMLConfig.cmake"
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -36,40 +32,14 @@
 			{
 				"command" : 1,
 				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
 				"line" : 11,
 				"parent" : 0
-			},
-			{
-				"command" : 4,
-				"file" : 0,
-				"line" : 6,
-				"parent" : 0
-			},
-			{
-				"file" : 2,
-				"parent" : 3
-			},
-			{
-				"command" : 3,
-				"file" : 2,
-				"line" : 116,
-				"parent" : 4
-			},
-			{
-				"file" : 1,
-				"parent" : 5
-			},
-			{
-				"command" : 2,
-				"file" : 1,
-				"line" : 102,
-				"parent" : 6
-			},
-			{
-				"command" : 2,
-				"file" : 1,
-				"line" : 77,
-				"parent" : 6
 			}
 		]
 	},
@@ -103,6 +73,20 @@
 		}
 	],
 	"id" : "chupa::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
 	"link" : 
 	{
 		"commandFragments" : 
@@ -116,17 +100,27 @@
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "/usr/lib/libsfml-graphics.so.2.5.1",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 7,
+				"backtrace" : 3,
 				"fragment" : "/usr/lib/libsfml-window.so.2.5.1",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 8,
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libsfml-audio.so.2.5.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/libsfml-network.so.2.5.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "/usr/lib/libsfml-system.so.2.5.1",
 				"role" : "libraries"
 			}
