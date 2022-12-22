@@ -35,6 +35,7 @@ public:
                         player.jump();
                     }
                 }
+                player.move();
                 w.clear();
                 w.draw(player.get_texture());
                 w.display();
@@ -44,7 +45,7 @@ public:
 
     Game() {
         w.create(VideoMode(Window_w, Window_h), "Window");
-        Player player(g, 1, 1);
+        Player player(g, 100.f, w.getSize().y - 100.f);
         init(player);
     }
 };

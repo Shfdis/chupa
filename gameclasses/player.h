@@ -10,18 +10,18 @@ using namespace sf;
 
 class Player {
 private:
-    int h = 50, w = 10;
+    float h, w;
     float x, y;
     float velx = 0, vely = 0;
-    float ax = 100, ay = 100;
+    float ax = 0, ay = 0;
     float g;
     RectangleShape texture;
 public:
-    int get_h() {
+    float get_h() const {
         return h;
     }
 
-    int get_w() {
+    float get_w() const {
         return w;
     }
 
@@ -30,15 +30,16 @@ public:
         vely += ay;
         x += velx;
         y += vely;
-        texture.move(velx, vely);
-        if (y > 1e-6) {
+        texture.setPosition(x, y);
+        std::cout << y - h << '\n';
+        if (y - h > 1e-6) {
             ay += g;
         }
     }
 
     void jump() {
-        if (abs(y) < 2e-6) {
-            ay = 20;
+        if (y < 1e-6) {
+            ay = 10000;
         }
     }
 
@@ -47,12 +48,14 @@ public:
     }
 
     Player(float g, float x, float y) {
+        texture = RectangleShape(Vector2f(100.f, 100.f));
         texture.move(x, y);
-        texture.setScale(ax, ay);
         texture.setFillColor(Color::Green);
         this->g = -g;
         this->x = x;
         this->y = y;
+        this->h = texture.getSize().y;
+        this->w = texture.getSize().x;
     }
 };
 
