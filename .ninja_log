@@ -1,0 +1,5 @@
+# ninja log v5
+0	15	1671867563359488853	CMakeFiles/chupa.dir/gameclasses/environment_obj.cpp.o	6ff8739dd8cfe511
+0	15	1671867563359488853	CMakeFiles/chupa.dir/gameclasses/player.cpp.o	d8da098c226615e4
+0	377	1671867678462354154	CMakeFiles/chupa.dir/main.cpp.o	4ccb9dccbfb775d1
+377	445	1671867678529019567	chupa	16e0a6b7074aef49
