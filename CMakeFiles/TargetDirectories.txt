@@ -1,3 +1,0 @@
-/home/oleg/chupa/chupa/CMakeFiles/chupa.dir
-/home/oleg/chupa/chupa/CMakeFiles/edit_cache.dir
-/home/oleg/chupa/chupa/CMakeFiles/rebuild_cache.dir
