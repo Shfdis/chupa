@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/artem/chupa/build",
+  "command": "/usr/bin/g++ -g -std=gnu++14 -o CMakeFiles/chupa.dir/main.cpp.o -c /home/artem/chupa/main.cpp",
+  "file": "/home/artem/chupa/main.cpp"
+}
+]
