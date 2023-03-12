@@ -3,5 +3,20 @@
   "directory": "/home/artem/chupa/build",
   "command": "/usr/bin/g++ -g -std=gnu++14 -o CMakeFiles/chupa.dir/main.cpp.o -c /home/artem/chupa/main.cpp",
   "file": "/home/artem/chupa/main.cpp"
+},
+{
+  "directory": "/home/artem/chupa/build",
+  "command": "/usr/bin/g++ -g -std=gnu++14 -o CMakeFiles/chupa.dir/gameclasses/player.cpp.o -c /home/artem/chupa/gameclasses/player.cpp",
+  "file": "/home/artem/chupa/gameclasses/player.cpp"
+},
+{
+  "directory": "/home/artem/chupa/build",
+  "command": "/usr/bin/g++ -g -std=gnu++14 -o CMakeFiles/chupa.dir/gameclasses/game.cpp.o -c /home/artem/chupa/gameclasses/game.cpp",
+  "file": "/home/artem/chupa/gameclasses/game.cpp"
+},
+{
+  "directory": "/home/artem/chupa/build",
+  "command": "/usr/bin/g++ -g -std=gnu++14 -o CMakeFiles/chupa.dir/gameclasses/game_obj.cpp.o -c /home/artem/chupa/gameclasses/game_obj.cpp",
+  "file": "/home/artem/chupa/gameclasses/game_obj.cpp"
 }
 ]
