@@ -1,2 +1,0 @@
-# chupa
-Metroidvania

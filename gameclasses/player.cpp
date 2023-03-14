@@ -18,22 +18,27 @@ void Player::move(float t, vector<game_obj> &obs) {
     texture.setPosition(x, y);
     if (!Player::detect_bottom_collision(obs)) {
         vely += g * t;
-    } else {
-        vely = (vely > 1e-2 ? 0 : vely);
     }
+    int i = collision_detector(obs);
+    pair<float, float> tmp = {0, 0};
+    if (i != -1) {
+        tmp = collision_handler(obs[i]);
+    }
+    x += tmp.first;
+    y += tmp.second;
 }
 
 void Player::jump(vector<game_obj> &obs) {
     if (Player::detect_bottom_collision(obs)) {
-        vely = -100;
+        vely = -500;
     }
 }
 
 void Player::go_left(vector<game_obj> &obs) {
-    velx = -100;
+    velx = -500;
 }
 void Player::go_right(vector<game_obj> &obs) {
-    velx = 100;
+    velx = 500;
 }
 RectangleShape &Player::get_texture() { return texture; }
 

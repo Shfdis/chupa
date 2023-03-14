@@ -14,7 +14,7 @@ using namespace sf;
 class Game {
 private:
     int Window_h = 1000, Window_w = 1000;
-    float g = 100;
+    float g = 400;
     RenderWindow w;
     vector<game_obj> obs;
 public:
