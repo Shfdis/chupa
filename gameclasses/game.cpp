@@ -40,7 +40,7 @@ void Game::init(Player &player) {
 
 Game::Game() {
     obs.push_back(game_obj(1000000, 1, .0, Window_h));
-    obs.push_back(game_obj(100, 100, 500, 900));
+    obs.push_back(game_obj(100, 1000, 500, 900));
     w.create(VideoMode(Window_w, Window_h), "Window");
     Player player(g, 100.f, w.getSize().y - 100.f);
     init(player);

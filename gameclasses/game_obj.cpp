@@ -1,4 +1,5 @@
 #include "game_obj.h"
+int t = 0;
 pair<float, float> game_obj::collision_handler(game_obj ob) {
     float dx = 1e9 + 7;
     if (abs(dx) > abs(ob.x - x - w)) {

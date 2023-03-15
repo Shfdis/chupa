@@ -1,6 +1,6 @@
 .cmake
 .cmake-build-debug
 CMakeFiles
-build/
+build
 .vscode
 .idea
