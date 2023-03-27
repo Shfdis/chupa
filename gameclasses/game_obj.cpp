@@ -1,6 +1,6 @@
 #include "game_obj.h"
 int t = 0;
-pair<float, float> game_obj::collision_handler(game_obj ob) {
+pair<float, float> game_obj::collision_handler(game_obj &ob) {
     float dx = 1e9 + 7;
     if (abs(dx) > abs(ob.x - x - w)) {
         dx = ob.x - x - w;
@@ -21,7 +21,7 @@ pair<float, float> game_obj::collision_handler(game_obj ob) {
         return {0, dy};
     }
 }
-int game_obj::collision_detector(vector<game_obj> obs) {
+int game_obj::collision_detector(vector<game_obj> &obs) {
     for (int j = 0; j < obs.size(); j++) {
         game_obj i = obs[j];
         if (x < i.x + i.w && x + w > i.x && y < i.y + i.h && h + y > i.y) {
@@ -33,7 +33,8 @@ int game_obj::collision_detector(vector<game_obj> obs) {
 }
 bool game_obj::detect_bottom_collision(vector<game_obj> &obs) {
     for (auto i : obs) {
-        if (y + h >= i.y && x + w >= i.x + 1 && x <= i.x + i.w - 1 && y <= i.y + i.h) {
+        if (y + h >= i.y && x + w >= i.x + 1 && x <= i.x + i.w - 1 &&
+            y + h <= i.y + i.h) {
             return true;
         }
     }
@@ -44,4 +45,8 @@ game_obj::game_obj(float ww, float hh, float xx, float yy) {
     h = hh;
     x = xx;
     y = yy;
+    texture = RectangleShape(Vector2f(w, h));
+    texture.move(xx, yy);
+    texture.setFillColor(Color::White);
 };
+RectangleShape &game_obj::get_texture() { return texture; }

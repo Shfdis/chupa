@@ -7,14 +7,19 @@ int Game::get_window_h() { return Window_h; }
 
 int Game::get_window_w() { return Window_w; }
 
+void Game::draw(Player& player) {
+    w.clear();
+    for (auto& i : obs) {
+        w.draw(i.get_texture());
+    }
+    w.draw(player.get_texture());
+}
+
 void Game::init(Player &player) {
-    sf::Shader shader;
-    shader.loadFromFile("/home/artem/chupa/gameclasses/KALGOVNA.frag", sf::Shader::Fragment);
 
     sf::Clock clock;
     float allTime;
     while (w.isOpen()) {
-        //float now = ;
         Event event;
         while (w.pollEvent(event)) {
             if (event.type == Event::Closed) {
@@ -31,16 +36,16 @@ void Game::init(Player &player) {
             player.go_right(obs);
         }
         player.move(frame_time, obs);
-        w.clear();
-        shader.setUniform("time", allTime);
-        w.draw(player.get_texture(), &shader);
+        // w.clear();
+        // w.draw(player.get_texture());
+        draw(player);
         w.display();
     }
 }
 
 Game::Game() {
     obs.push_back(game_obj(1000000, 1, .0, Window_h));
-    obs.push_back(game_obj(100, 1000, 500, 900));
+    obs.push_back(game_obj(100, 100, 500, 700));
     w.create(VideoMode(Window_w, Window_h), "Window");
     Player player(g, 100.f, w.getSize().y - 100.f);
     init(player);

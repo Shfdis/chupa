@@ -17,6 +17,7 @@ private:
     float g = 400;
     RenderWindow w;
     vector<game_obj> obs;
+    void draw(Player& player);
 public:
     int get_window_h();
 

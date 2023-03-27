@@ -17,7 +17,6 @@ class Player : public game_obj {
     // float x, y;
     float velx = 0, vely = 0;
     float g;
-    RectangleShape texture;
 
   public:
     float get_h();
@@ -31,8 +30,6 @@ class Player : public game_obj {
     void go_left(vector<game_obj> &obs);
 
     void go_right(vector<game_obj> &obs);
-
-    RectangleShape &get_texture();
 
     Player(float g, float x, float y);
 };
