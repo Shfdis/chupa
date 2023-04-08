@@ -13,10 +13,12 @@ void Game::draw(Player& player) {
         w.draw(i.get_texture());
     }
     w.draw(player.get_texture());
+    for (auto& i : player.get_fireballs()) {
+        w.draw(i.get_texture());
+    }
 }
 
 void Game::init(Player &player) {
-
     sf::Clock clock;
     float allTime;
     while (w.isOpen()) {
@@ -47,6 +49,6 @@ Game::Game() {
     obs.push_back(game_obj(1000000, 1, .0, Window_h));
     obs.push_back(game_obj(100, 100, 500, 700));
     w.create(VideoMode(Window_w, Window_h), "Window");
-    Player player(g, 100.f, w.getSize().y - 100.f);
+    Player player(g, 100, w.getSize().y - 100);
     init(player);
 }

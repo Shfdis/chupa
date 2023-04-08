@@ -5,7 +5,7 @@
 #ifndef CHUPA_PLAYER_H
 #define CHUPA_PLAYER_H
 #include "game_obj.h"
-// #include "game_obj.cpp"
+#include "fireball.h"
 #include <SFML/Graphics.hpp>
 #include <bits/stdc++.h>
 
@@ -17,7 +17,8 @@ class Player : public game_obj {
     // float x, y;
     float velx = 0, vely = 0;
     float g;
-
+    vector<Fireball> fireballs;
+    bool right;
   public:
     float get_h();
 
@@ -32,6 +33,8 @@ class Player : public game_obj {
     void go_right(vector<game_obj> &obs);
 
     Player(float g, float x, float y);
+
+    vector<Fireball> get_fireballs();
 };
 
 #endif // CHUPA_PLAYER_H
