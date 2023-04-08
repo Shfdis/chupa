@@ -8,6 +8,7 @@ bool Fireball::move(float t, vector<game_obj>& obs) {
     }
     x += t * vx;
     y += t * vy;
+    texture.setPosition(x, y);
     return false;
 }
 bool Fireball::explode(game_obj& obj) {

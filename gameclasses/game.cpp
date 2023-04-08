@@ -35,7 +35,6 @@ void Game::init(Player &player) {
         } if (Keyboard::isKeyPressed(Keyboard::A)) {
             player.go_left(obs);
         } if (Keyboard::isKeyPressed(Keyboard::D)) {
-            cerr << 1 << '\n';
             player.go_right(obs);
         } if (Keyboard::isKeyPressed(Keyboard::Space)) {
             player.cast();

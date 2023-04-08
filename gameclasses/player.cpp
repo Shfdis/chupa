@@ -70,13 +70,13 @@ Player::Player(float g, float x, float y) {
 
 void Player::cast() {
     if (right) {
-        Fireball t(10.f, 10.f, (float) x + w, (float) y + h / 2);
-        t.setv(500);
+        Fireball t(10.f, 10.f, this->x + this->w, this->y + this->h / 2);
+        t.setv(500.f);
         fireballs.push_back(t);
     }
     else {
-        Fireball t(10.f, 10.f, (float) x, (float) y + h / 2);
-        t.setv(-500);
+        Fireball t(10.f, 10.f,  this->x - 10, this->y + this->h / 2);
+        t.setv(-500.f);
         fireballs.push_back(t);
     }
 }
