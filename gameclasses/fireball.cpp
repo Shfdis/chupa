@@ -13,3 +13,6 @@ bool Fireball::move(float t, vector<game_obj>& obs) {
 bool Fireball::explode(game_obj& obj) {
     return true;
 }
+void Fireball::setv(float v) {
+    vx = v;
+}

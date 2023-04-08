@@ -67,4 +67,18 @@ Player::Player(float g, float x, float y) {
     this->h = texture.getSize().y;
     this->w = texture.getSize().x;
 }
+
+void Player::cast() {
+    if (right) {
+        Fireball t(10.f, 10.f, (float) x + w, (float) y + h / 2);
+        t.setv(500);
+        fireballs.push_back(t);
+    }
+    else {
+        Fireball t(10.f, 10.f, (float) x, (float) y + h / 2);
+        t.setv(-500);
+        fireballs.push_back(t);
+    }
+}
+
 vector<Fireball> Player::get_fireballs() { return fireballs; }

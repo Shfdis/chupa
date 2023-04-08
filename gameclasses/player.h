@@ -34,6 +34,8 @@ class Player : public game_obj {
 
     Player(float g, float x, float y);
 
+    void cast();
+
     vector<Fireball> get_fireballs();
 };
 
