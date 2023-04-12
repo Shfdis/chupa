@@ -68,15 +68,19 @@ Player::Player(float g, float x, float y) {
     this->w = texture.getSize().x;
 }
 
-void Player::cast() {
+void Player::cast(float cur_t) {
+    if (cur_t - last_fire < 0.5) {
+        return;
+    }
+    last_fire = cur_t;
     if (right) {
-        Fireball t(10.f, 10.f, this->x + this->w, this->y + this->h / 2);
-        t.setv(500.f);
+        Fireball t(30.f, 30.f, this->x + this->w, this->y + this->h / 2);
+        t.setv(700.f);
         fireballs.push_back(t);
     }
     else {
-        Fireball t(10.f, 10.f,  this->x - 10, this->y + this->h / 2);
-        t.setv(-500.f);
+        Fireball t(30.f, 30.f,  this->x - 30, this->y + this->h / 2);
+        t.setv(-700.f);
         fireballs.push_back(t);
     }
 }

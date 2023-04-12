@@ -20,7 +20,7 @@ void Game::draw(Player& player) {
 
 void Game::init(Player &player) {
     sf::Clock clock;
-    float allTime;
+    float allTime = 0;
     while (w.isOpen()) {
         Event event;
         while (w.pollEvent(event)) {
@@ -37,7 +37,7 @@ void Game::init(Player &player) {
         } if (Keyboard::isKeyPressed(Keyboard::D)) {
             player.go_right(obs);
         } if (Keyboard::isKeyPressed(Keyboard::Space)) {
-            player.cast();
+            player.cast(allTime);
         }
         player.move(frame_time, obs);
         // w.clear();

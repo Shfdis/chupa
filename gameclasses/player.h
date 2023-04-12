@@ -17,6 +17,7 @@ class Player : public game_obj {
     // float x, y;
     float velx = 0, vely = 0;
     float g;
+    float last_fire = -100;
     vector<Fireball> fireballs;
     bool right;
   public:
@@ -34,7 +35,7 @@ class Player : public game_obj {
 
     Player(float g, float x, float y);
 
-    void cast();
+    void cast(float cur_t);
 
     vector<Fireball> get_fireballs();
 };
