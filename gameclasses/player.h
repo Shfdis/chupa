@@ -25,13 +25,13 @@ class Player : public game_obj {
 
     float get_w();
 
-    void move(float t, vector<game_obj> &obs);
+    void move(float t, vector<game_obj*> &obs);
 
-    void jump(vector<game_obj> &obs);
+    void jump(vector<game_obj*> &obs);
 
-    void go_left(vector<game_obj> &obs);
+    void go_left(vector<game_obj*> &obs);
 
-    void go_right(vector<game_obj> &obs);
+    void go_right(vector<game_obj*> &obs);
 
     Player(float g, float x, float y);
 

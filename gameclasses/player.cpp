@@ -9,7 +9,7 @@ float Player::get_h() { return h; }
 
 float Player::get_w() { return w; }
 
-void Player::move(float t, vector<game_obj> &obs) {
+void Player::move(float t, vector<game_obj*> &obs) {
     x += velx * t;
     y += vely * t;
     vector<int> to_delete;
@@ -41,17 +41,17 @@ void Player::move(float t, vector<game_obj> &obs) {
     }
 }
 
-void Player::jump(vector<game_obj> &obs) {
+void Player::jump(vector<game_obj *> &obs) {
     if (Player::detect_bottom_collision(obs)) {
         vely = -500;
     }
 }
 
-void Player::go_left(vector<game_obj> &obs) {
+void Player::go_left(vector<game_obj *> &obs) {
     velx = -500;
     right = false;
 }
-void Player::go_right(vector<game_obj> &obs) {
+void Player::go_right(vector<game_obj *> &obs) {
     velx = 500;
     right = true;
 }

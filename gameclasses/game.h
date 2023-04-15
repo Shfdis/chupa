@@ -9,6 +9,7 @@
 #include <bits/stdc++.h>
 #include <filesystem>
 #include "player.h"
+#include "target.h"
 using namespace sf;
 
 
@@ -17,7 +18,7 @@ private:
     int Window_h = 1000, Window_w = 1000;
     float g = 400;
     RenderWindow w;
-    vector<game_obj> obs;
+    vector<game_obj*> obs;
     void draw(Player& player);
 public:
     int get_window_h();

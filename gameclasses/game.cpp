@@ -10,7 +10,7 @@ int Game::get_window_w() { return Window_w; }
 void Game::draw(Player& player) {
     w.clear();
     for (auto& i : obs) {
-        w.draw(i.get_texture());
+        w.draw(i->get_texture());
     }
     w.draw(player.get_texture());
     for (auto& i : player.get_fireballs()) {
@@ -48,8 +48,9 @@ void Game::init(Player &player) {
 }
 
 Game::Game() {
-    obs.push_back(game_obj(1000000, 1, .0, Window_h));
-    obs.push_back(game_obj(100, 100, 500, 700));
+    obs.push_back(new game_obj(1000000, 1, .0, Window_h));
+    obs.push_back(new game_obj(100, 100, 500, 700));
+    obs.push_back(new target(100, 100, 700, Window_h - 100));
     w.create(VideoMode(Window_w, Window_h), "Window");
     Player player(g, 100, w.getSize().y - 100);
     init(player);
