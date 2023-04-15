@@ -50,3 +50,9 @@ game_obj::game_obj(float ww, float hh, float xx, float yy) {
     texture.setFillColor(Color::White);
 };
 RectangleShape &game_obj::get_texture() { return texture; }
+void game_obj::set_texture(string file_name) {
+    Texture txtr;
+
+    txtr.loadFromFile(file_name, IntRect(w, h, x, y));
+    texture.setTexture(&txtr);
+}

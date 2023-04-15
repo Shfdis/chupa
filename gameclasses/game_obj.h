@@ -15,8 +15,9 @@ class game_obj {
     game_obj() = default;
     game_obj(float ww, float hh, float xx, float yy);
     RectangleShape &get_texture();
+    void set_texture(string file_name);
     pair<float, float> collision_handler(game_obj &ob);
-    int collision_detector(vector<game_obj> &obs);
+    int collision_detector(vector<game_obj> &obs);  
     bool detect_bottom_collision(vector<game_obj> &obs);
 };
 #endif
