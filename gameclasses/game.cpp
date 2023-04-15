@@ -48,10 +48,8 @@ void Game::init(Player &player) {
 }
 
 Game::Game() {
-    cout << get_current_dir_name() << endl;
     obs.push_back(game_obj(1000000, 1, .0, Window_h));
     obs.push_back(game_obj(100, 100, 500, 700));
-    obs.back().set_texture("/home/artem/chupa/textures/wall.png");
     w.create(VideoMode(Window_w, Window_h), "Window");
     Player player(g, 100, w.getSize().y - 100);
     init(player);
