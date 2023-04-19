@@ -35,7 +35,8 @@ void Player::move(float t, vector<game_obj*> &obs) {
             tmp = collision_handler(obs[i]);
         }
         if (tmp.first != 0) velx = 0;
-        if (tmp.second != 0) vely = 0;
+        if (tmp.second < 0) vely = min(0.f, vely);
+        if (tmp.second > 0) vely = max(0.f, vely);
         x += tmp.first;
         y += tmp.second;
     }
