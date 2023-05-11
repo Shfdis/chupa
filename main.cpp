@@ -6,5 +6,5 @@ using namespace sf;
 
 int main() {
     Game g;
-
+    return 0;
 }

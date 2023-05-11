@@ -7,7 +7,6 @@
 
 #include <SFML/Graphics.hpp>
 #include <bits/stdc++.h>
-#include <filesystem>
 #include "player.h"
 #include "target.h"
 using namespace sf;

@@ -10,5 +10,6 @@ add_executable(chupa
         main.cpp gameclasses/player.cpp gameclasses/player.h gameclasses/game.cpp
         gameclasses/game.h gameclasses/game_obj.h gameclasses/game_obj.cpp
         gameclasses/fireball.cpp gameclasses/fireball.h
-        gameclasses/target.h gameclasses/target.cpp)
+        gameclasses/target.h gameclasses/target.cpp
+        gameclasses/texture_handler.h gameclasses/texture_handler.cpp)
 target_link_libraries(chupa sfml-graphics)
