@@ -57,7 +57,8 @@ void Player::go_right(vector<game_obj *> &obs) {
     right = true;
 }
 
-Player::Player(float g, float x, float y) {
+Player::Player(float g, float x, float y, handler *H) {
+    Handle = H;
     texture = RectangleShape(Vector2f(100.f, 100.f));
     texture.move(x, y);
     texture.setFillColor(Color::Green);

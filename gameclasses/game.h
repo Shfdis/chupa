@@ -9,6 +9,7 @@
 #include <bits/stdc++.h>
 #include "player.h"
 #include "target.h"
+#include "texture_handler.h"
 using namespace sf;
 
 
@@ -19,6 +20,7 @@ private:
     RenderWindow w;
     vector<game_obj*> obs;
     void draw(Player& player);
+    handler *Handle;
 public:
     int get_window_h();
 

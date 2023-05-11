@@ -6,6 +6,7 @@
 #define CHUPA_PLAYER_H
 #include "game_obj.h"
 #include "fireball.h"
+#include "texture_handler.h"
 #include <SFML/Graphics.hpp>
 #include <bits/stdc++.h>
 
@@ -20,6 +21,7 @@ class Player : public game_obj {
     float last_fire = -100;
     vector<Fireball> fireballs;
     bool right;
+    handler *Handle;
   public:
     float get_h();
 
@@ -33,7 +35,7 @@ class Player : public game_obj {
 
     void go_right(vector<game_obj*> &obs);
 
-    Player(float g, float x, float y);
+    Player(float g, float x, float y, handler *H);
 
     void cast(float cur_t);
 
