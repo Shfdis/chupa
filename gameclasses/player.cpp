@@ -9,7 +9,21 @@ float Player::get_h() { return h; }
 
 float Player::get_w() { return w; }
 
-void Player::move(float t, vector<game_obj*> &obs) {
+void Player::move(float t, vector<game_obj *> &obs) {
+    if (patience + t >= 0.2f && velx != 0) {
+        slide++;
+        slide %= 5;
+        patience = 0;
+    } else if (velx == 0) {
+        slide = -1;
+    } else {
+        patience += t;
+    }
+    if (right) {
+        this->get_texture().setTexture(slide == -1 ? Handle->stay_right : Handle->right[slide], true);
+    } else {
+        this->get_texture().setTexture(slide == -1 ? Handle->stay_left : Handle->left[slide], true);
+    }
     x += velx * t;
     y += vely * t;
     vector<int> to_delete;
@@ -58,11 +72,13 @@ void Player::go_right(vector<game_obj *> &obs) {
 }
 
 Player::Player(float g, float x, float y, handler *H) {
-    Handle = H;
+    slide = -1;
+    this->Handle = H;
+    patience = 0;
     texture = RectangleShape(Vector2f(100.f, 100.f));
+    texture.setTexture(H->stay_right, true);
     texture.move(x, y);
-    texture.setFillColor(Color::Green);
-    right =  true;
+    right = true;
     this->g = g;
     this->x = x;
     this->y = y;
@@ -79,9 +95,8 @@ void Player::cast(float cur_t) {
         Fireball t(30.f, 30.f, this->x + this->w, this->y + this->h / 2);
         t.setv(700.f);
         fireballs.push_back(t);
-    }
-    else {
-        Fireball t(30.f, 30.f,  this->x - 30, this->y + this->h / 2);
+    } else {
+        Fireball t(30.f, 30.f, this->x - 30, this->y + this->h / 2);
         t.setv(-700.f);
         fireballs.push_back(t);
     }

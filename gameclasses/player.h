@@ -13,11 +13,12 @@
 using namespace sf;
 
 class Player : public game_obj {
-  private:
+  protected:
     // float h, w;
     // float x, y;
+    int slide;
     float velx = 0, vely = 0;
-    float g;
+    float g, patience;
     float last_fire = -100;
     vector<Fireball> fireballs;
     bool right;

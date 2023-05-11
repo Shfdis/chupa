@@ -24,7 +24,6 @@ void Game::init(Player &player) {
     sf::Clock clock;
     float allTime = 0;
     while (w.isOpen()) {
-        
         Event event;
         while (w.pollEvent(event)) {
             if (event.type == Event::Closed) {
@@ -53,11 +52,15 @@ void Game::init(Player &player) {
 Game::Game() {
     chdir("..");
     obs.push_back(new game_obj(1000000, 1, .0, Window_h));
-    Handle = new handler();
     obs.push_back(new target(100, 100, 700, Window_h - 100));
     w.create(VideoMode(Window_w, Window_h), "Window");
     obs.push_back(new game_obj(100, 100, 500, 700));
-    // obs[1]->get_texture().setTexture(pTexture, true);
+    Handle = new handler();
+    Texture txt;
+    txt.loadFromFile("./textures/wall.png");
+    const Texture *pTexture = &txt;
+    obs[1]->get_texture().setTexture(pTexture, true);
+    obs[1]->get_texture().setTexture(Handle->wall, true);
     Player player(g, 100, w.getSize().y - 100, Handle);
     init(player);
 }
