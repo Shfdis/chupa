@@ -7,14 +7,13 @@ using namespace sf;
 using namespace std;
 class handler {
   public:
-   Texture txt, txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11, txt12, txt13, txt14, txt15, txt16, txt17, txt18, txt19;
-    vector<const Texture*> right;
-    vector<const Texture*> left;
-    vector<const Texture*> explode;
-    const Texture *wall;
-    const Texture *left_fire, *right_fire;
-    const Texture *target;
-    const Texture *stay_left, *stay_right, *throw_left, *throw_right;
+    Texture txt[20];
+    vector<Texture*> right;
+    vector<Texture*> left;
+    Texture *wall;
+    Texture *fireball, *throw_left, *throw_right;
+    Texture *target, *left_fire, *stay_left, *right_fire, *stay_right;
+    vector<Texture*> explode;
     handler();
 };
 #endif

@@ -10,9 +10,9 @@ float Player::get_h() { return h; }
 float Player::get_w() { return w; }
 
 void Player::move(float t, vector<game_obj *> &obs) {
-    if (patience + t >= 0.2f && velx != 0) {
+    if (patience + t >= 1.f && velx != 0) {
         slide++;
-        slide %= 5;
+        slide %= 6;
         patience = 0;
     } else if (velx == 0) {
         slide = -1;
