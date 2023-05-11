@@ -58,3 +58,9 @@ void game_obj::set_texture(string file_name) {
 bool game_obj::explode() {
     return false;
 }
+float game_obj::get_x() {
+    return x;
+}
+float game_obj::get_y() {
+    return y;
+}

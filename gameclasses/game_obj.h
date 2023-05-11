@@ -20,5 +20,7 @@ class game_obj {
     int collision_detector(vector<game_obj *> &obs);
     bool detect_bottom_collision(vector<game_obj *> &obs);
     virtual bool explode();
+    float get_x();
+    float get_y();
 };
 #endif

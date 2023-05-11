@@ -15,6 +15,9 @@ void Game::draw(Player& player) {
     for (auto& i : player.get_fireballs()) {
         w.draw(i.get_texture());
     }
+    View view;
+    view.setCenter(player.get_x() + player.get_w() / 2, player.get_y() - player.get_h() / 2);
+    w.setView(view);
 }
 
 void Game::init(Player &player) {
