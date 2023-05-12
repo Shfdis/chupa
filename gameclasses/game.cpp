@@ -56,6 +56,7 @@ Game::Game() {
     w.create(VideoMode(Window_w, Window_h), "Window");
     obs.push_back(new game_obj(100, 100, 500, 700));
     Handle = new handler();
+    obs.back()->get_texture().setTexture(Handle->wall, true);
     Player player(g, 100, w.getSize().y - 100, Handle);
     init(player);
 }

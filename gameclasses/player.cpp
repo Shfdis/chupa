@@ -10,20 +10,53 @@ float Player::get_h() { return h; }
 float Player::get_w() { return w; }
 
 void Player::move(float t, vector<game_obj *> &obs) {
-    if (patience + t >= 0.18f && velx != 0) {
-        slide++;
-        slide %= 6;
-        patience = 0;
-    } else if (velx == 0) {
+    if (patience + t >= 0.18 && fire) {
+        fire = false;
         slide = 0;
-        patience = 0.17;
-    } else {
-        patience += t;
+        patience = 0;
     }
-    if (right) {
-        this->get_texture().setTexture(slide == -1 ? Handle->stay_right : Handle->right[slide], true);
+    if (!fire) {
+        if (detect_bottom_collision(obs)) {
+            if (patience + t >= 0.15f && velx != 0) {
+                slide++;
+                slide %= 6;
+                patience = 0;
+            } else if (velx == 0) {
+                slide = 0;
+                patience = 0.17;
+            } else {
+                patience += t;
+            }
+            if (right) {
+                this->get_texture().setTexture(
+                    slide == -1 ? Handle->stay_right : Handle->right[slide],
+                    true);
+            } else {
+                this->get_texture().setTexture(
+                    slide == -1 ? Handle->stay_left : Handle->left[slide],
+                    true);
+            }
+        } else {
+            if (right) {
+                this->get_texture().setTexture(
+                    slide == -1 ? Handle->stay_right : Handle->right[slide],
+                    true);
+            } else {
+                this->get_texture().setTexture(
+                    slide == -1 ? Handle->stay_left : Handle->left[slide],
+                    true);
+            }
+        }
+        if (slide == 1) {
+            get_texture().setScale(Vector2f(1.09375, 1));
+        } else if (slide == 4) {
+            get_texture().setScale(Vector2f(1.0781, 1));
+        } else {
+            get_texture().setScale(Vector2f(1, 1));
+        }
     } else {
-        this->get_texture().setTexture(slide == -1 ? Handle->stay_left : Handle->left[slide], true);
+        get_texture().setScale(Vector2f(1.276, 1));
+        patience += t;
     }
     x += velx * t;
     y += vely * t;
@@ -59,16 +92,16 @@ void Player::move(float t, vector<game_obj *> &obs) {
 
 void Player::jump(vector<game_obj *> &obs) {
     if (Player::detect_bottom_collision(obs)) {
-        vely = -500;
+        vely = -350;
     }
 }
 
 void Player::go_left(vector<game_obj *> &obs) {
-    velx = -500;
+    velx = -300;
     right = false;
 }
 void Player::go_right(vector<game_obj *> &obs) {
-    velx = 500;
+    velx = 300;
     right = true;
 }
 
@@ -76,7 +109,7 @@ Player::Player(float g, float x, float y, handler *H) {
     slide = -1;
     this->Handle = H;
     patience = 0;
-    texture = RectangleShape(Vector2f(100.f, 100.f));
+    texture = RectangleShape(Vector2f(60.f, 60.f));
     texture.setTexture(H->stay_right, true);
     texture.move(x, y);
     right = true;
@@ -92,12 +125,18 @@ void Player::cast(float cur_t) {
         return;
     }
     last_fire = cur_t;
+    fire = true;
+    patience = 0;
     if (right) {
-        Fireball t(30.f, 30.f, this->x + this->w, this->y + this->h / 2);
+        this->get_texture().setTexture(Handle->throw_right, true);
+        Fireball t(36.f, 15.f, this->x + this->w, this->y + this->h / 2);
+        t.get_texture().setTexture(Handle->right_fire);
         t.setv(700.f);
         fireballs.push_back(t);
     } else {
-        Fireball t(30.f, 30.f, this->x - 30, this->y + this->h / 2);
+        this->get_texture().setTexture(Handle->throw_left, true);
+        Fireball t(36.f, 15.f, this->x - 36, this->y + this->h / 2);
+        t.get_texture().setTexture(Handle->left_fire);
         t.setv(-700.f);
         fireballs.push_back(t);
     }
