@@ -15,7 +15,7 @@ class Fireball : public game_obj {
    public:
     explicit Fireball(float ww, float hh, float xx, float yy) : game_obj(ww, hh, xx, yy) {}
     bool move(float t, vector<game_obj *> &obs);
-    bool explode(game_obj * vict);
+    void explode(game_obj * vict);
     void setv(float v);
 };
 #endif  // CHUPA_FIREBALL_H

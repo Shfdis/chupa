@@ -6,7 +6,12 @@
 #include "game_obj.h"
 class target : public game_obj { 
   public:
+    double time = 0;
+    int slide = 0;
+    handler *hd;
     explicit target(float w, float h, float x, float y) : game_obj(w, h, x, y) {};
-    bool explode() override;
+    void explode() override;
+    bool update(float t) override;
+  
 };
 #endif

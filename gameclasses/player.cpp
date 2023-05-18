@@ -92,7 +92,7 @@ void Player::move(float t, vector<game_obj *> &obs) {
 
 void Player::jump(vector<game_obj *> &obs) {
     if (Player::detect_bottom_collision(obs)) {
-        vely = -350;
+        vely = -600;
     }
 }
 
@@ -121,7 +121,7 @@ Player::Player(float g, float x, float y, handler *H) {
 }
 
 void Player::cast(float cur_t) {
-    if (cur_t - last_fire < 0.5) {
+    if (cur_t - last_fire < 0.3) {
         return;
     }
     last_fire = cur_t;

@@ -15,7 +15,8 @@ pair<float, float> game_obj::collision_handler(game_obj *ob) {
     if (abs(dy) > abs(y - ob->y - ob->h)) {
         dy = ob->y + ob->h - y;
     }
-    if (abs(dx) < abs(dy)) {
+    // cerr << dx << " "<< dy << '\n';
+    if (abs(dx) < abs(dy) || dy == 0) {
         return {dx, 0};
     } else {
         return {0, dy};
@@ -50,12 +51,16 @@ game_obj::game_obj(float ww, float hh, float xx, float yy) {
     texture.setFillColor(Color::White);
 };
 RectangleShape &game_obj::get_texture() { return texture; }
-bool game_obj::explode() {
-    return false;
-}
 float game_obj::get_x() {
     return x;
 }
 float game_obj::get_y() {
     return y;
+}
+void game_obj::explode() {
+    int x;
+    return;
+}
+bool game_obj::update(float t) {
+    return false;
 }

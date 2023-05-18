@@ -15,11 +15,12 @@ using namespace sf;
 
 class Game {
 private:
+    int to_dest = 6;
     int Window_h = 1000, Window_w = 1000;
-    float g = 400;
+    float g = 1000;
     RenderWindow w;
     vector<game_obj*> obs;
-    void draw(Player& player);
+    void draw(Player& player, float t);
     handler *Handle;
 public:
     int get_window_h();

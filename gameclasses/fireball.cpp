@@ -4,9 +4,7 @@ using namespace sf;
 bool Fireball::move(float t, vector<game_obj*>& obs) {
     int coll = collision_detector(obs);
     if (coll != -1) {
-        if (explode(obs[coll])) {
-            obs.erase(obs.begin() + coll);
-        }
+        explode(obs[coll]);
         return true;
     }
     x += t * vx;
@@ -14,8 +12,8 @@ bool Fireball::move(float t, vector<game_obj*>& obs) {
     texture.setPosition(x, y);
     return false;
 }
-bool Fireball::explode(game_obj* obj) {
-    return obj->explode();
+void Fireball::explode(game_obj* obj) {
+    obj->explode();
 }
 void Fireball::setv(float v) {
     vx = v;

@@ -45,4 +45,5 @@ handler::handler() {
     stay_right = &txt[17];
     throw_left = &txt[18];
     throw_right = &txt[19];
+    target = &txt[3];
 }
