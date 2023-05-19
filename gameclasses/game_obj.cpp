@@ -16,9 +16,12 @@ pair<float, float> game_obj::collision_handler(game_obj *ob) {
         dy = ob->y + ob->h - y;
     }
     // cerr << dx << " "<< dy << '\n';
-    if (abs(dx) < abs(dy) || dy == 0) {
+    if (abs(dx) < abs(dy)) {
         return {dx, 0};
     } else {
+        if (dy == 0) {
+            dy = -1e-5;
+        }
         return {0, dy};
     }
 }
