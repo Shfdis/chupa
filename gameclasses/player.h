@@ -17,6 +17,7 @@ class Player : public game_obj {
     // float h, w;
     // float x, y;
     bool fire = false;
+    bool flies = false;
     int slide;
     float velx = 0, vely = 0;
     float g, patience;

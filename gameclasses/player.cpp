@@ -17,7 +17,7 @@ void Player::move(float t, vector<game_obj *> &obs) {
     }
     if (!fire) {
         if (detect_bottom_collision(obs)) {
-            if (patience + t >= 0.15f && velx != 0) {
+            if (patience + t >= 0.15f && velx != 0 || flies) {
                 slide++;
                 slide %= 6;
                 patience = 0;
@@ -27,6 +27,7 @@ void Player::move(float t, vector<game_obj *> &obs) {
             } else {
                 patience += t;
             }
+            flies = false;
             if (right) {
                 this->get_texture().setTexture(
                     slide == -1 ? Handle->stay_right : Handle->right[slide],
@@ -37,6 +38,7 @@ void Player::move(float t, vector<game_obj *> &obs) {
                     true);
             }
         } else {
+            flies = true;
             if (right) {
                 this->get_texture().setTexture(
                     slide == -1 ? Handle->stay_right : Handle->right[slide],
