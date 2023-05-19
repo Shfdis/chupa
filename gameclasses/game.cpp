@@ -18,6 +18,11 @@ void Game::draw(Player& player, float t) {
         obs.erase(obs.begin() + to_del[i]);
     }
     w.clear();
+    Vector2f tmp = (Vector2f(player.get_x(), player.get_y()) - Vector2f(100, w.getSize().y - 100));
+    tmp *= (float)0.1;
+    tmp = Vector2f(player.get_x() - 600, player.get_y() - 800) - tmp;
+    bg->setPosition(tmp.x, tmp.y);
+    w.draw(*bg);
     for (auto& i : obs) {
         w.draw(i->get_texture());
     }
@@ -34,6 +39,7 @@ void Game::draw(Player& player, float t) {
 void Game::init(Player& player) {
     sf::Clock clock;
     float allTime = 0;
+
     while (w.isOpen()) {
         Event event;
         while (w.pollEvent(event)) {
@@ -69,6 +75,9 @@ void Game::init(Player& player) {
 Game::Game() {
     chdir("..");
     Handle = new handler();
+    bg = new RectangleShape(Vector2f(1500, 1500));
+    bg->move(-400, 200);
+    bg->setTexture(Handle->background, true);
     for (int i = 0; i < 20; i++) {
         obs.push_back(new game_obj(100, 100, 100 * i, Window_h));
         obs.back()->get_texture().setTexture(Handle->wall);

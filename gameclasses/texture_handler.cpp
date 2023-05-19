@@ -21,9 +21,11 @@ handler::handler() {
     txt[17].loadFromFile("./textures/str.png");
     txt[18].loadFromFile("./textures/thl.png");
     txt[19].loadFromFile("./textures/thr.png");
+    txt[20].loadFromFile("./textures/bg.png");
     wall = &txt[0];
     left_fire = &txt[1];
     right_fire = &txt[2];
+    background = &txt[20];
     explode.push_back(&txt[3]);
     explode.push_back(&txt[4]);
     explode.push_back(&txt[5]);
