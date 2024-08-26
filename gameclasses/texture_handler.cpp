@@ -1,27 +1,27 @@
 #include "texture_handler.h"
 
 handler::handler() {
-    txt[0].loadFromFile("./textures/wall.png");
-    txt[1].loadFromFile("./textures/left_fire.png");
-    txt[2].loadFromFile("./textures/right_fire.png");
-    txt[3].loadFromFile("./textures/ani1.png");
-    txt[4].loadFromFile("./textures/ani2.png");
-    txt[5].loadFromFile("./textures/ani3.png");
-    txt[6].loadFromFile("./textures/ani4.png");
-    txt[7].loadFromFile("./textures/ani5.png");
-    txt[8].loadFromFile("./textures/lt1.png");
-    txt[9].loadFromFile("./textures/lt2.png");
-    txt[10].loadFromFile("./textures/lt3.png");
-    txt[11].loadFromFile("./textures/lt4.png");
-    txt[12].loadFromFile("./textures/rt1.png");
-    txt[13].loadFromFile("./textures/rt2.png");
-    txt[14].loadFromFile("./textures/rt3.png");
-    txt[15].loadFromFile("./textures/rt4.png");
-    txt[16].loadFromFile("./textures/stl.png");
-    txt[17].loadFromFile("./textures/str.png");
-    txt[18].loadFromFile("./textures/thl.png");
-    txt[19].loadFromFile("./textures/thr.png");
-    txt[20].loadFromFile("./textures/bg.png");
+    txt[0].loadFromFile("./chupa/textures/wall.png");
+    txt[1].loadFromFile("./chupa/textures/left_fire.png");
+    txt[2].loadFromFile("./chupa/textures/right_fire.png");
+    txt[3].loadFromFile("./chupa/textures/ani1.png");
+    txt[4].loadFromFile("./chupa/textures/ani2.png");
+    txt[5].loadFromFile("./chupa/textures/ani3.png");
+    txt[6].loadFromFile("./chupa/textures/ani4.png");
+    txt[7].loadFromFile("./chupa/textures/ani5.png");
+    txt[8].loadFromFile("./chupa/textures/lt1.png");
+    txt[9].loadFromFile("./chupa/textures/lt2.png");
+    txt[10].loadFromFile("./chupa/textures/lt3.png");
+    txt[11].loadFromFile("./chupa/textures/lt4.png");
+    txt[12].loadFromFile("./chupa/textures/rt1.png");
+    txt[13].loadFromFile("./chupa/textures/rt2.png");
+    txt[14].loadFromFile("./chupa/textures/rt3.png");
+    txt[15].loadFromFile("./chupa/textures/rt4.png");
+    txt[16].loadFromFile("./chupa/textures/stl.png");
+    txt[17].loadFromFile("./chupa/textures/str.png");
+    txt[18].loadFromFile("./chupa/textures/thl.png");
+    txt[19].loadFromFile("./chupa/textures/thr.png");
+    txt[20].loadFromFile("./chupa/textures/bg.png");
     wall = &txt[0];
     left_fire = &txt[1];
     right_fire = &txt[2];
