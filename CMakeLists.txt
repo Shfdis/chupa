@@ -3,7 +3,7 @@ project(chupa)
 
 set(CMAKE_CXX_STANDARD 14)
 
-find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+find_package(SFML COMPONENTS graphics audio REQUIRED)
 
 
 add_executable(chupa
