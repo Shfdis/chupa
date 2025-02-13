@@ -7,7 +7,10 @@
 <li> Clone into your home folder. </li>
 <li> Install SFML and CMake. </li>
 <li> Run: 
-```cd ~/chupa & cmake . & cmake --build . & ./chupa ```
+<p>
+<code> cd ~/chupa & cmake . & cmake --build . & ./chupa </code>
+
+</p>
 </li>
 </ul>
 <div>
