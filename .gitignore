@@ -1,8 +1,10 @@
 .cmake
 .cmake-build-debug
 CMakeFiles
+CMakeFiles/*
 build
 .vscode
 .idea
-chupa
 CMakeCache.txt
+cmake_install.cmake
+Makefile
