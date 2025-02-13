@@ -49,7 +49,6 @@ game_obj::game_obj(float ww, float hh, float xx, float yy) {
     h = hh;
     x = xx;
     y = yy;
-    cout << x << " " << y << endl;
     texture = RectangleShape(Vector2f(w, h));
     texture.move(xx, yy);
     texture.setFillColor(Color::White);
