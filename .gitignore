@@ -5,6 +5,6 @@ CMakeFiles/*
 build
 .vscode
 .idea
-CMakeCache
+CMakeCache.txt
 cmake_install.cmake
 Makefile
