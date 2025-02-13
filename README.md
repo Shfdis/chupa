@@ -8,7 +8,8 @@
 <li> Install SFML and CMake. </li>
 <li> Run: 
 <p>
-``` cd ~/chupa & cmake . & cmake --build . & ./chupa ```
+<code> cd ~/chupa & cmake . & cmake --build . & ./chupa </code>
+
 </p>
 </li>
 </ul>
