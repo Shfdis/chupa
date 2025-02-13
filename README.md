@@ -1,5 +1,5 @@
 <h1> Chupa </h1>
-<h2>Metroidvania<h2>
+<h2>Metroidvania</h2>
 <hr />
 <div>
 <h2> To build </h2>

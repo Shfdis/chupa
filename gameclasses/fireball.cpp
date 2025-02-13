@@ -3,7 +3,6 @@ using namespace std;
 using namespace sf;
 bool Fireball::move(float t, vector<game_obj*>& obs) {
     int coll = collision_detector(obs);
-    cout << x << " " << y << endl;
     if (coll != -1) {
         explode(obs[coll]);
         return true;
