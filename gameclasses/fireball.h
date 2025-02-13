@@ -17,5 +17,6 @@ class Fireball : public game_obj {
     bool move(float t, vector<game_obj *> &obs);
     void explode(game_obj * vict);
     void setv(float v);
+    Fireball(float ww, float hh, float xx, float yy, float vel) : game_obj(ww, hh, xx, yy) { this->vx = vel; }
 };
 #endif  // CHUPA_FIREBALL_H

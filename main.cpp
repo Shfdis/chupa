@@ -5,6 +5,6 @@
 using namespace sf;
 
 int main() {
-    Game g;
+    Game* g = new Game();
     return 0;
 }

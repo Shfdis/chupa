@@ -131,15 +131,14 @@ void Player::cast(float cur_t) {
     patience = 0;
     if (right) {
         this->get_texture().setTexture(Handle->throw_right, true);
-        Fireball t(36.f, 15.f, this->x + this->w, this->y + this->h / 2);
+        Fireball t(36., 15., this->x + this->w * 1.1, this->y + this->h / 2, 700.0);
+        cout << 1 << endl;
         t.get_texture().setTexture(Handle->right_fire);
-        t.setv(700.f);
         fireballs.push_back(t);
     } else {
         this->get_texture().setTexture(Handle->throw_left, true);
-        Fireball t(36.f, 15.f, this->x - 36, this->y + this->h / 2);
+        Fireball t(36.f, 15.f, this->x - 40, this->y + this->h / 2, -700.0);
         t.get_texture().setTexture(Handle->left_fire);
-        t.setv(-700.f);
         fireballs.push_back(t);
     }
 }
