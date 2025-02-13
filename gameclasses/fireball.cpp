@@ -18,3 +18,8 @@ void Fireball::explode(game_obj* obj) {
 void Fireball::setv(float v) {
     vx = v;
 }
+
+Fireball::Fireball(float ww, float hh, float xx, float yy, float velx) : game_obj(ww, hh, xx, yy) {
+    this->vx = velx;
+    this->vy = 0;
+}

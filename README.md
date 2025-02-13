@@ -1,9 +1,16 @@
-# chupa
-Metroidvania
-1) Clone into your home folder.
-2) Install SFML and CMake.
-3) Run: 
-cd ~/chupa
-cmake .
-cmake --build .
-./chupa
+<h1> Chupa </h1>
+<h2>Metroidvania</h2>
+<hr />
+<div>
+<h2> To build </h2>
+<ul>
+<li> Clone into your home folder. </li>
+<li> Install SFML and CMake. </li>
+<li> Run: 
+<p>
+<code> cd ~/chupa & cmake . & cmake --build . & ./chupa </code>
+
+</p>
+</li>
+</ul>
+<div>
