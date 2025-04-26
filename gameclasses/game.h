@@ -31,6 +31,8 @@ public:
     void init(Player& player);
 
     Game();
+
+    ~Game();
 };
 
 

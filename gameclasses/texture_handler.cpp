@@ -49,3 +49,18 @@ handler::handler() {
     throw_right = &txt[19];
     target = &txt[3];
 }
+handler::~handler() {
+    for (auto& i : left) {
+        delete i;
+    }
+    for (auto& i : right) {
+        delete i;
+    }
+    for (auto& i : explode) {
+        delete i;
+    }
+    delete wall, fireball, throw_left, throw_right, background;
+    delete target, left_fire, stay_left, right_fire, stay_right;
+}
+
+

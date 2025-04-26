@@ -128,3 +128,11 @@ Game::Game() {
     Player player(g, 100, w.getSize().y - 100, Handle);
     init(player);
 }
+
+Game::~Game() {
+    delete handler;
+    delete bg;
+    for (auto& i : obs) {
+        delete i;
+    }
+}
