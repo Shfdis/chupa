@@ -144,3 +144,7 @@ void Player::cast(float cur_t) {
 }
 
 vector<Fireball> Player::get_fireballs() { return fireballs; }
+
+Player::~Player() {
+    delete Handle;
+}

@@ -40,6 +40,8 @@ class Player : public game_obj {
 
     Player(float g, float x, float y, handler *H);
 
+    ~Player();
+
     void cast(float cur_t);
 
     vector<Fireball> get_fireballs();

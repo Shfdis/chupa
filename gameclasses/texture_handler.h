@@ -16,5 +16,6 @@ class handler {
     vector<Texture*> explode;
     Texture *background;
     handler();
+    ~handler();
 };
 #endif
