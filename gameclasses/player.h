@@ -25,6 +25,8 @@ class Player : public game_obj {
     vector<Fireball> fireballs;
     bool right;
     handler *Handle;
+    float physics_acc = 0.0f;
+    void physics_step(float dt, vector<game_obj*> &obs);
   public:
     float get_h();
 

@@ -73,7 +73,6 @@ void Game::init(Player& player) {
 }
 
 Game::Game() {
-    chdir("..");
     Handle = new handler();
     bg = new RectangleShape(Vector2f(1500, 1500));
     bg->move(-400, 200);
@@ -130,7 +129,7 @@ Game::Game() {
 }
 
 Game::~Game() {
-    delete handler;
+    delete Handle;
     delete bg;
     for (auto& i : obs) {
         delete i;

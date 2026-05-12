@@ -7,8 +7,3 @@ build
 .idea
 CMakeCache.txt
 cmake_install.cmake
-<<<<<<< HEAD
-Makefile
-=======
-Makefile
->>>>>>> main
