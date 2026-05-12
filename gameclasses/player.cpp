@@ -60,8 +60,12 @@ void Player::move(float t, vector<game_obj *> &obs) {
         get_texture().setScale(Vector2f(1.276, 1));
         patience += t;
     }
-    x += velx * t;
-    y += vely * t;
+    const float dt_fixed = 1.0f / 240.0f;
+    physics_acc += t;
+    while (physics_acc >= dt_fixed) {
+        physics_step(dt_fixed, obs);
+        physics_acc -= dt_fixed;
+    }
     vector<int> to_delete;
     for (int j = 0; j < fireballs.size(); j++) {
         Fireball &i = fireballs[j];
@@ -74,8 +78,13 @@ void Player::move(float t, vector<game_obj *> &obs) {
     }
     velx = 0;
     texture.setPosition(x, y);
+}
+
+void Player::physics_step(float dt, vector<game_obj *> &obs) {
+    x += velx * dt;
+    y += vely * dt;
     if (!Player::detect_bottom_collision(obs)) {
-        vely += g * t;
+        vely += g * dt;
     }
     int i = 0;
     while (i != -1) {
@@ -94,7 +103,7 @@ void Player::move(float t, vector<game_obj *> &obs) {
 
 void Player::jump(vector<game_obj *> &obs) {
     if (Player::detect_bottom_collision(obs)) {
-        vely = -600;
+        vely = -1200;
     }
 }
 
